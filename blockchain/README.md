@@ -5,7 +5,7 @@
 
 在比特币交易的支付环节，收件人的公钥是通过其数字指纹表示的，称为比特币地址，就像支票上的支付对象的名字（即“收款方”）。一般情况下，比特币地址由一个公钥生成并对应于这个公钥。然而，并非所有比特币地址都是公钥；他们也可以代表其他支付对象，譬如脚本。这样一来，比特币地址把收款方抽象起来了，在交易时他们只需要把比特币地址告诉其他人即可。
 
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig0404.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig0404.png)
 
 #### 私钥
 私钥就是一个随机选出的数字。一个比特币地址中的所有资金的控制取决于相应私钥的所有权和控制权。在比特币交易中，私钥用于生成支付比特币所必需的签名以证明资金的所有权。私钥必须始终保持机密，因为一旦被泄露给第三方，相当于该私钥保护之下的比特币也拱手相让了。私钥还必须进行备份，以防意外丢失，因为私钥一旦丢失就难以复原，其所保护的比特币也将永远丢失。
@@ -20,10 +20,10 @@
 
 为了更简洁方便地表示长串的数字，许多计算机系统会使用一种以数字和字母组成的大于十进制的表示法。Base64使用了26个小写字母、26个大写字母、10个数字以及两个符号（例如“+”和“/”），用于在电子邮件这样的基于文本的媒介中传输二进制数据。Base64通常用于编码邮件中的附件。Base58是一种基于文本的二进制编码格式，用在比特币和其它的加密货币中。这种编码格式不仅实现了数据压缩，保持了易读性，还具有错误诊断功能。Base58是Base64编码格式的子集，同样使用大小写字母和10个数字，但舍弃了一些容易错读和在特定字体中容易混淆的字符。具体地，Base58不含Base64中的0（数字0）、O（大写字母o）、l（小写字母L）、I（大写字母i），以及“+”和“/”两个字符。简而言之，Base58就是由不包括（0，O，l，I）的大小写字母和数字组成。
 
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig405.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig405.png)
 
 ### 交易
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/2-1.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/2-1.png)
 
 首先，一笔交易需要传递至比特币网络，才能被传播，也才能加入区块链中。本质上，一笔比特币交易只是300到400字节的数据，而且它们必须被发送到成千上万个比特币节点中的任意一个。只要发送者能使用多于一个比特币节点来确保这笔交易被传播，那么发送者并不需要信任用来传播该笔交易的单一节点。相应地，这些节点不需要信任发送者，也不用建立发送者的“身份档案”。由于这笔交易是经过签名且不含任何机密信息、私钥或密码，因此它可被任何潜在的便利网络公开地传播。
 
@@ -66,7 +66,7 @@ UTXO被每一个全节点比特币客户端在一个储存于内存中的数据�
 ### 比特币网络
 尽管比特币P2P网络中的各个节点相互对等，但是根据所提供的功能不同，各节点可能具有不同的分工。每个比特币节点都是路由、区块链数据库、挖矿、钱包服务的功能集合。
 
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig603.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig603.png)
 
 
 #### 网络发现
@@ -109,11 +109,11 @@ UTXO被每一个全节点比特币客户端在一个储存于内存中的数据�
 #### 区块的连接
 比特币的完整节点保存了区块链从创世区块起的一个本地副本。随着新的区块的产生，该区块链的本地副本会不断地更新用于扩展这个链条。当一个节点从网络接收传入的区块时，它会验证这些区块，然后链接到现有的区块链上。为建立一个连接，一个节点将检查传入的区块头并寻找该区块的“父区块哈希值”。 
 
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig701.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig701.png)
 
 #### Merkle 树
 区块链中的每个区块都包含了产生于该区块的所有交易，且以Merkle树表示。Merkle树是一种哈希二叉树，它是一种用作快速归纳和校验大规模数据完整性的数据结构。
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig704.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig704.png)
 
 ### 挖矿与共识
 挖矿是增加比特币货币供应的一个过程。挖矿同时还保护着比特币系统的安全，防止欺诈交易，避免“双重支付”，“双重支付”是指多次花费同一笔比特币。矿工们通过为比特币网络提供算力来换取获得比特币奖励的机会。
@@ -124,7 +124,7 @@ UTXO被每一个全节点比特币客户端在一个储存于内存中的数据�
 
 比特币的奖励机制被设计为速度递减模式。矿工通过创造一个新区块得到的比特币数量大约每四年（或准确说是每210,000个块）减少一半。开始时为2009年1月每个区块奖励50个比特币，然后到2012年11月减半为每个区块奖励25个比特币。
 
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig801.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig801.png)
 
 矿工们同时也会获取交易费。每笔交易都可能包含一笔交易费，交易费是每笔交易记录的输入和输出的差额。在挖矿过程中成功“挖出”新区块的矿工可以得到该区块中包含的所有交易“小费”。
 
@@ -200,16 +200,16 @@ UTXO被每一个全节点比特币客户端在一个储存于内存中的数据�
 因为区块链是去中心化的数据结构，所以不同副本之间不能总是保持一致。区块有可能在不同时间到达不同节点，导致节点有不同的区块链视角。解决的办法是，每一个节点总是选择并尝试延长代表累计了最大工作量证明的区块链，也就是最长的或最大累计难度的链。节点通过将记录在每个区块中的难度加总起来，得到建立这个链所要付出的工作量证明的总量。只要所有的节点选择最长累计难度的区块链，整个比特币网络最终会收敛到一致的状态。分叉即在不同区块链间发生的临时差异，当更多的区块添加到了某个分叉中，这个问题便会迎刃而解。
 
 在第一张图中，网络有一个统一的区块链视角，以蓝色区块为主链的“顶点”。
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig802.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig802.png)
 
 我们看到两个矿工几乎同时挖到了两个不同的区块。这两个区块是顶点区块——蓝色区块的子区块，可以延长这个区块链。为了便于跟踪这个分叉事件，我们设定有一个被标记为红色的、来自加拿大的区块，还有一个被标记为绿色的、来自澳大利亚的区块。
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig803.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig803.png)
 
 当这个两个区块传播时，一些节点首先收到“红色”区块，一些节点收到“绿色”区块。比特币网络上的节点对于区块链的顶点产生了分歧，一派以红色区块为顶点，而另一派以绿色区块为顶点。
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig804.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig804.png)
 
 网络中的一部分算力专注于“红色”区块为父区块，在其之上建立新的区块；另一部分算力则专注在“绿色”区块上。即便算力在这两个阵营中平均分配，也总有一个阵营抢在另一个阵营前发现工作量证明解并将其传播出去。在这个例子中我们可以打个比方，假如工作在“绿色”区块上的矿工找到了一个“粉色”区块延长了区块链(蓝色-绿色-粉色)，他们会立刻传播这个新区块，整个网络会都会认为这个区块是有效的。
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig805.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig805.png)
 
 所有在上一轮选择“绿色”区块为胜出者的节点会直接将这条链延长一个区块。然而，那些选择“红色”区块为胜出者的节点现在会看到两个链：“蓝色-绿色-粉色”和“蓝色-红色”。如图，这些节点会根据结果将“蓝色-绿色-粉色”这条链设置为主链，将“蓝色-红色”这条链设置为备用链。这些节点接纳了新的更长的链，被迫改变了原有对区块链的观点，这就叫做链的重新共识。因为“红”区块做为父区块已经不在最长链上，导致了他们的候选区块已经成为了“孤块”，所以现在任何原本想要在“蓝色-红色”链上延长区块链的矿工都会停下来。全网将“蓝色-绿色-粉色”这条链识别为主链，“粉色”区块为这条链的最后一个区块。全部矿工立刻将他们产生的候选区块的父区块切换为“粉色”，来延长“蓝色-绿色-粉色”这条链。
-![](https://github.com/zeoio/garden/blob/master/mastering_bitcoin/pictures/Fig806.png)
+![](https://github.com/zeoio/mastering_blockchain/blob/master/blockchain/pictures/Fig806.png)
