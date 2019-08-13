@@ -13,14 +13,14 @@
 课程目录:
 1. [区块链简介](blockchain/1.md)
 2. [区块链的分类](blockchain/2.md)
-3. [比特币介绍](blockchain/3.md)
-4. 比特币的基本原理
-5. [秘钥和地址](blockchain/README.md)
-6. [交易](blockchain/README.md)
-7. [比特币网络](blockchain/README.md)
-8. [区块链](blockchain/README.md)
-9. [挖矿和共识](blockchain/README.md)
-10. 在识区块链
+3. [比特币简介](blockchain/3.md)
+4. [比特币的基本原理](blockchain/4.md)
+5. [秘钥和地址](blockchain/5.md)
+6. [交易](blockchain/6.md)
+7. [比特币网络](blockchain/7.md)
+8. [区块链](blockchain/8.md)
+9. [挖矿和共识](blockchain/9.md)
+10. [在识区块链](blockchain/10.md)
 
 #### 深入学习比特币
 
