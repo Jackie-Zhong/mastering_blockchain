@@ -35,13 +35,15 @@
 
 - 第一章 课程简介
   - 课程简介
-  - 超级账本fabric简介
+  - 超级账本简介
+  - farbic简介
 - 第二章 farbic环境搭建
   - 安装ubuntu 18.04虚拟机
   - 搭建开发环境
   - 下载和编译fabric代码
   - 安装fabric-samples
 - 第三章 超级账本fabric基本原理
+  - fabric架构设计
   - 基本原理
   - 常见术语
 - 第四章 构建第一个fabric网络
