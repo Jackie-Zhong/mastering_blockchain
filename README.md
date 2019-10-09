@@ -37,6 +37,7 @@
   - 课程简介
   - 超级账本fabric简介
 - 第二章 farbic环境搭建
+  - 安装ubuntu 18.04虚拟机
   - 搭建开发环境
   - 下载和编译fabric代码
   - 安装fabric-samples
