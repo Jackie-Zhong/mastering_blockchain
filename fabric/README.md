@@ -16,3 +16,8 @@
 
 [区块链技术指南](https://yeasy.gitbooks.io/blockchain_guide/content/08_hyperledger/ "区块链技术指南")
 
+[Hyperledger Fabric国密改造 ](https://www.cnblogs.com/laolieren/p/hyperledger_fabric_gm_summary.html "Hyperledger Fabric国密改造 ")
+
+[fabric1.4.x国密改造过程全记录](https://blog.csdn.net/dyj5841619/article/details/90638054 "fabric1.4.x国密改造过程全记录")
+
+[fabric国密算法的改造](https://anapodoton.github.io/2019/08/fabric%E5%9B%BD%E5%AF%86%E7%AE%97%E6%B3%95%E7%9A%84%E6%94%B9%E9%80%A0/ "fabric国密算法的改造")
