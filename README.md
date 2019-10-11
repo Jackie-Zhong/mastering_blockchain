@@ -39,15 +39,14 @@
   - farbic简介
 - 第二章 farbic环境搭建
   - 安装ubuntu 18.04虚拟机
-  - 搭建开发环境
+  - 搭建golang和fabric开发环境
   - 下载和编译fabric代码
-  - 安装fabric-samples
 - 第三章 超级账本fabric基本原理
   - fabric架构设计
   - 基本原理
   - 常见术语
 - 第四章 构建第一个fabric网络
-  - 快速构建
+  - 使用fabric-samples快速部署
   - 手动部署fabric网络
   - 分析byfn.sh构建脚本
   - 分析eyfn.sh脚本
@@ -57,10 +56,11 @@
   - 智能合约入门
   - fabric car应用
 - 第六章 fabric国密移植
-  - 国密介绍
+  - 加解密算法简介
+  - sm国密算法介绍
+  - fabric国密算法移植方法
   - fabric国密移植
-  - 使用solo算法进行测试
-  - 使用kafka算法进行测试
+  - 使用solo, kafka算法进行测试
   - 使用etcdraft算法进行测试
   - 优化docker构建过程
 
