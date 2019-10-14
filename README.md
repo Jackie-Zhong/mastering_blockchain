@@ -61,7 +61,7 @@
   - fabric国密算法移植方法
   - fabric国密移植
   - 使用solo, kafka算法进行测试
-  - 使用etcdraft算法进行测试
+  - 使用raft算法进行测试
   - 优化docker构建过程
 
 ---
