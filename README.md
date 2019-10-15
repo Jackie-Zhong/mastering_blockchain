@@ -36,23 +36,28 @@
 - 第一章 课程简介
   - 课程简介
   - 超级账本简介
-  - farbic简介
+  - 什么是fabric
 - 第二章 farbic环境搭建
   - 安装ubuntu 18.04虚拟机
   - 搭建golang和fabric开发环境
   - 下载和编译fabric代码
-- 第三章 超级账本fabric基本原理
-  - fabric架构设计
-  - 基本原理
-  - 常见术语
+- 第三章 fabric核心技术原理
+  - fabric架构和交易流程
+  - 区块链网络
+  - 身份管理和数字证书管理
+  - 成员服务提供者MSP
+  - peer节点和orderer节点
+  - 智能合约和链码
+  - 账本和区块链
+  - 排序服务
+  - solo, kafa和raft共识算法
 - 第四章 构建第一个fabric网络
   - 使用fabric-samples快速部署
   - 手动部署fabric网络
   - 分析byfn.sh构建脚本
   - 分析eyfn.sh脚本
-  - raft算法介绍
-  - 使用ercdraft算法来构建网络
-- 第五章 编写farbic智能合约
+  - 使用raft算法来构建网络
+- 第五章 智能合约chain code
   - 智能合约入门
   - fabric car应用
 - 第六章 fabric国密移植
