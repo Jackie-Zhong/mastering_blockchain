@@ -50,7 +50,7 @@
   - 排序服务
   - solo, kafa和raft共识算法
   - 智能合约和链码
- - 账本和区块链
+  - 账本和区块链
 - 第四章 构建第一个fabric网络
   - 使用fabric-samples快速部署
   - 手动部署fabric网络
@@ -62,14 +62,6 @@
   - fabric car应用
 - 第六章 fabric sdk
   - 
-- 第六章 fabric国密移植
-  - 加解密算法简介
-  - 国密sm算法介绍
-  - fabric国密算法移植方法
-  - fabric国密移植
-  - 使用solo, kafka算法进行测试
-  - 使用raft算法进行测试
-  - 优化docker构建过程
 
 ---
 
