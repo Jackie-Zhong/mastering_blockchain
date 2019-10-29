@@ -61,7 +61,15 @@
   - 智能合约入门
   - fabric car应用
 - 第六章 fabric sdk
-  - 
+  - 学习sdk
+- 第七章 fabric国密移植
+  - 加解密算法简介
+  - 国密sm算法介绍
+  - fabric国密算法移植方法
+  - fabric国密移植
+  - 使用solo, kafka算法进行测试
+  - 使用raft算法进行测试
+  - 优化docker构建过程
 
 ---
 
