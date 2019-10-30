@@ -5,6 +5,7 @@
 - 深入学习比特币
 - 深入学习以太坊
 - 深入学习超级账本fabric
+- Hyperledger Fabric1.4国密改造
 - 从零开发公链
 - 从零开发数字货币钱包
 - 从零开发数字货币交易所
@@ -62,11 +63,20 @@
   - fabric car应用
 - 第六章 fabric sdk
   - 学习sdk
-- 第七章 fabric国密移植
+
+---
+
+#### Hyperledger Fabric1.4国密改造
+- 第一章 简介
+  - 课程简介
+  - 搭建开发环境
+  - 搭建测试环境
+- 第二章 fabric1.4国密移植
   - 加解密算法简介
-  - 国密sm算法介绍
-  - fabric国密算法移植方法
+  - 国密算法简介
+  - fabric国密移植方法
   - fabric国密移植
+- 第三章 测试和优化
   - 使用solo, kafka算法进行测试
   - 使用raft算法进行测试
   - 优化docker构建过程
